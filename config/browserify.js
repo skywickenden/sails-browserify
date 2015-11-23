@@ -20,7 +20,12 @@ module.exports = function(grunt) {
       dest: '.tmp/public/browserify/debug.' + version + '.js'
     },
     options: {
-      transform: [require('grunt-react').browserify]
+      transform: [
+        require('babelify').configure({
+          'presets': ['es2015', 'react']
+        }),  
+        require('grunt-react').browserify
+      ]
     }
   });
 
