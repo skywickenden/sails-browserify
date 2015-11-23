@@ -1,6 +1,20 @@
 sails-browserify
 ================
 
+# Fork Notes
+
+Adapted to include babel before browserify. Enables use of ES6/2015 in the browser.
+
+Your package.json will need updating to include
+
+    "babelify": "^7.2.0",
+    "sails-hook-babel": "https://github.com/skywickenden/sails-hook-babel/tarball/167e37035d3f78a723d75cc9f58089bfe5a140a4"
+    
+sails-hook-babel is a forked version, due to the master not working for babel 6. Check the master to see if it has been updated.
+
+================
+
+
 Task folder configuration to work with Browserify and React (this is optional)
 
 ### [Full Example v0.11](https://github.com/Josebaseba/sails-browserify-react)
